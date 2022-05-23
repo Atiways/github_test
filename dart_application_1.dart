@@ -1,10 +1,10 @@
-void main(List<String> arguments) {
-  print('Hello world!');
+import 'class1.dart';
+
   void main(List<String> arguments) {
   // print('Hello world!');
   // //string intercolation
   // String ano = 'Atiriyi';
-  // String ati = "My brother's name is $ano";
+  // String ati = "My brother's name is $ano";  
   // print(ati);
   // print("The number of strings in the vraible is" + ati.length.toString());
   // // how to intercolate the above
@@ -105,51 +105,52 @@ void main(List<String> arguments) {
 //   }
 // }
 // on clause(exception)
-try {
-  int result = 12~/0;
-print("$result");
-}on IntegerDivisionByZeroException{
-  print("cannot be divided by zero");
-}
-// if you do not know the type of exception use catch clause
-try {
-  int result = 12~/0;
-print("$result");
-} catch (e) {
-  print("the exception is $e");
-}
-// strack trace used to know what happened before the exception was throwm
-try {
-  int result = 12~/0;
-print("$result");
-} catch (e,s) {
-  print("the exception is $e");
-  print("the exception is $s");
-}
-// finally clause
-try {
-  int result = 12~/0;
-print("$result");
-} catch (e) {
-  print("the exception is $e");
-}finally{
-  print('THIS IS OUR FINALLY CLAUSE AND IS ALWAYS EXECUTED WETHER OR NOT THERE IS AN EXCEPTION');
-}
-}try {
-  depositMoney(-200);
-} catch(e){
-  print(e);
-}
+// try {
+//   int result = 12~/0;
+// print("$result");
+// }on IntegerDivisionByZeroException{
+//   print("cannot be divided by zero");
+// }
+// // if you do not know the type of exception use catch clause
+// try {
+//   int result = 12~/0;
+// print("$result");
+// } catch (e) {
+//   print("the exception is $e");
+// }
+// // strack trace used to know what happened before the exception was throwm
+// try {
+//   int result = 12~/0;
+// print("$result");
+// } catch (e,s) {
+//   print("the exception is $e");
+//   print("the exception is $s");
+// }
+// // finally clause
+// try {
+//   int result = 12~/0;
+// print("$result");
+// } catch (e) {
+//   print("the exception is $e");
+// }finally{
+//   print('THIS IS OUR FINALLY CLAUSE AND IS ALWAYS EXECUTED WETHER OR NOT THERE IS AN EXCEPTION');
+// }
+// }try {
+//   depositMoney(-200);
+// } catch(e){
+//   print(e);
+// }
 
-}
-class depositException implements Exception{
-  String errorMessage(){
-    return "this number is invalid";
-  }
-} 
-
-void depositMoney(int amount){
-  if (amount <0) {
-   throw new depositException();
-  }
+// }
+// class depositException implements Exception{
+//   String errorMessage(){
+//     return "this number is invalid";
+//   }
+// } 
+// void depositMoney(int amount){
+//   if (amount <0) {
+//    throw new depositException();
+//   }
+  class1 car = ("atirola", 12);
+  print(car.Name);
 }
